@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodePenでWebデザインをはじめよう</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./_assets/css/style.min.css">
+  <script src="https://kit.fontawesome.com/2114525057.js" crossorigin="anonymous"></script>
+</head>
+
+<body clss="website-htmlcss">
+  <header class="my-5 container">
+    <h1 class="mb-3">CodePenでWebデザインをはじめよう</h1>
+    <p>この授業では、コードを直接書くことによりWebサイトをデザインしていく技法を、<a href="http://codepen.io">CodePen</a>というサービスを利用して学んでいきます。Webサイトを記述するための言語のうち、本授業ではHTMLとCSSの2つについて説明していきます。</p>
+    <p>更新：<time datetime="2020-06-02">2020-06-02</time></p>
+    <hr>
+    <section id="index">
+      <h2>目次</h2>
+      <ol>
+        <li><a href="#lesson01">CodePenを使ってみよう</a></li>
+        <li><a href="#lesson02">CodePenでHTMLを書いてみよう</a></li>
+        <li><a href="#lesson03">Q&Aページを作ってみよう</a></li>
+      </ol>
+    </section>
+    <hr>
+  </header>
+
+
+
+
+  <main class="container">
+    <article id="lesson01" class="lesson">
+      <h1>CodePenを使ってみよう</h1>
+      <h2>CodePenとは</h2>
+      <p><a href="https://codepen.io/" target="_blank">CodePen: Build, Test, and Discover Front-end Code. </a></p>
+      <p><img class="img-fluid" src="./_assets/img/codepen-screenshot.png" alt="CopePenのスクリーンショット"></p>
+      <ul>
+        <li>Webページを構成するための3つの言語「HTML」「CSS」「JS」をブラウザの画面に入力するとリアルタイムに表示を確認でき、さらにその成果を保存・共有できるサービス。</li>
+        <li>Webデザインの学習のほか、ブログに埋め込むことがでるため、プロフェショナルな人たちが技法の共有をする際にも活用されている。</li>
+        <li>SNSのようにいいねやコメントを付けたり、他のSNSに共有することもできる。</li>
+      </ul>
+      <h2><i class="fab fa-youtube"></i> CodePenに登録する <span class="badge badge-secondary">4:10</span></h2>
+      <p>CodePenを利用するためには登録が必要です。以下の動画を参考に登録をしましょう。</p>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/WtRHXg00HYA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </article>
+
+
+    <article id="lesson02" class="lesson">
+      <h1>CodePenでHTMLを書いてみよう</h1>
+      <h2><i class="fab fa-youtube"></i> Penを使ってHTMLを書いてみる<span class="badge badge-secondary">7:39</span></h2>
+      <ul>
+        <li>編集画面の表示方法</li>
+        <li>テキストをコピペしてHTMLを書いてみる
+          <ul>
+            <li>山括弧を書いてHTMLのタグを書く</li>
+            <li>開始タグと終了タグではさむ</li>
+          </ul>
+        </li>
+        <li>CodePenに作品を保存する
+          <ul>
+            <li>タイトルをつける</li>
+            <li>保存ボタン（Save）：一度保存すると以降は自動的に保存される</li>
+            <li>一度保存した作品を一覧できる場所：ダッシュボード</li>
+            <li>URLをコピペして共有</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/Uph6XwbRGts?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h2><i class="fab fa-youtube"></i> CodePenの編集画面のレイアウト変更、便利な入力方法 <span class="badge badge-secondary">5:57</span></h2>
+      <ul>
+        <li>編集画面のレイアウト変更</li>
+        <li>便利な入力方法
+          <ul>
+            <li>HTMLの要素（山括弧の中身）を入力してタブキーを押すと、開始タグと終了タグのセットに展開してくれる</li>
+            <li>カーソルも開始タグと終了タグの間にあるので、そのまま内容を入力できる</li>
+            <li>これはEmmetという短縮記法で、とっっっても便利なので、今後はこの入力方法を使うようにしよう</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/5T-WKJ0LMSQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      </article>
+
+      <article id="lesson03" class="lesson">
+
+      <h1><span class="badge badge-dark">演習</span> Q&amp;Aページを作ってみよう</h1>
+      <p class="lead">HTMLの中でも非常によく使うものを、Q&amp;Aページを作成しながら学んでいきます。</p>
+      <h2>完成見本</h2>
+      <p>画面右上のCodePenのロゴをクリックすると新規タブで大きく表示されます。</p>
+      <div class="embed-pen">
+        <iframe height="500" style="width: 100%;" scrolling="no" title="Q&amp;Aページのサンプル" src="https://codepen.io/mathatelle/embed/dyYLeqg?height=265&theme-id=dark&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/mathatelle/pen/dyYLeqg'>Q&amp;Aページのサンプル</a> by mathatelle
+  (<a href='https://codepen.io/mathatelle'>@mathatelle</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+      </div>
+
+      <h2><i class="fab fa-youtube"></i> h1 タイトル（大見出し）, h2 中見出し, p 本文（段落） <span class="badge badge-secondary">5:34</span></h2>
+      <ul>
+        <li>hはheadingの略、h1はレベルが1のheadingという意味。レベルは1〜6まで用意されている。h1はページのタイトルや大見出しとして用いられる。</li>
+        <li>h2は大見出し（h1）よりもレベルが1つ下の見出し</li>
+        <li>pはparagraph（段落）の略。本文で用いれれる。</li>
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/Q0PH5I1Psbs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h2><i class="fab fa-youtube"></i> a リンク <span class="badge badge-secondary">3:20</span></h2>
+      <ul>
+        <li>リンク先はhref属性として設定する。</li>
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/aPCTjIvoO4E?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+
+      <h2><i class="fab fa-youtube"></i> img 画像 <span class="badge badge-secondary">7:06</span></h2>
+      <ul>
+        <li>画像のパス（場所）はsrc属性として設定する。</li>
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/nUqGjTBfnE8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+
+
+      <!-- <h2> <span class="badge badge-secondary"></span></h2>
+      <ul>
+
+      </ul>
+      <div class="embed-youtube">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> -->
+
+    </article>
+
+
+
+
+
+
+  </main>
+
+
+  <footer class="my-5 container">
+    <p>著者：吉村正照 (Masateru YOSHIMURA)</p>
+    <p>「CodePenでWebデザインをはじめよう」は<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">Creative Commons - CC BY 4.0</a>の下に提供されています。</p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="./_assets/js/script.min.js"></script>
+</body>
+
+</html>
